@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!-- Tailwind & daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Lato Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind Custom Class -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#F85559",
+              "primary-font-color": "#121212",
+              "secondary-font-color": "rgba(18, 18, 18, 0.60)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+    <title>Fruit Brust:Fresh fruit at your fingertips.</title>
+  </head>
+  <body class="font-lato">
+    <header>
+      <!-- Navbar Section Start -->
+      <nav
+        class="max-w-screen-xl mx-auto p-4 md:my-5 md:px-12 py-8 md:bg-primary-color lg:rounded-full"
+      >
+        <div class="flex flex-wrap items-center justify-between">
+          <!-- Navmenu Section Start -->
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto"
+          >
+            <div class="relative mt-3 md:hidden">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+              />
+            </div>
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border md:flex-row md:space-x-8 md:mt-0 md:border-0 md:text-lg"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
+                  >All Fruits</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Navmenu Section End -->
+
+          <!-- Nav Logo Section Start -->
+          <a href="#" class="flex items-center md:pl-40 lg:pl-0">
+            <img src="./images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+            <span
+              class="text-2xl font-semibold whitespace-nowrap text-black md:text-white lg:text-[40px]"
+              >Fruit Burst</span
+            >
+          </a>
+          <!-- Nav Logo Section End -->
+
+          <!-- Nav Searchbar Section Start -->
+          <div class="flex">
+            <div class="relative hidden lg:block">
+              <input
+                type="text"
+                id=""
+                class="block w-72 p-2 pl-4 text-sm text-secondary-font-color border bg-white lg:rounded-full"
+                placeholder="Search here"
+              />
+
+              <div
+                class="absolute inset-y-0 right-6 flex items-center pl-3 pointer-events-none"
+              >
+                <!-- Nav Search Icon -->
+                <svg
+                  class="w-4 h-4 text-secondary-font-color dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <button
+              data-collapse-toggle="navbar-search"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Nav Searchbar Section End -->
+        </div>
+      </nav>
+      <!-- Navbar Section End -->
+
+      <!-- Banner Section Start -->
+      <section class="max-w-screen-xl mx-auto md:my-5 py-8">
+        <div class="carousel relative">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="relative">
+            <img src="./images/banner1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            </div>
+            <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="text-white">Exotic tastes at your doorstep</h1>
+                <p>
+                  We supply highly quality organic products
+                </p>
+                <button type="button">Shop Now</button>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="relative">
+            <img src="./images/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            </div>
+            <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="text-white">Exotic tastes at your doorstep</h1>
+                <p>
+                  We supply highly quality organic products
+                </p>
+                <button type="button">Shop Now</button>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="relative">
+            <img src="./images/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+            </div>
+            <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="text-white">Exotic tastes at your doorstep</h1>
+                <p>
+                  We supply highly quality organic products
+                </p>
+                <button type="button">Shop Now</button>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="relative">
+            <img src="./images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            </div>
+            <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <h1 class="text-white">Exotic tastes at your doorstep</h1>
+                <p>
+                  We supply highly quality organic products
+                </p>
+                <button type="button">Shop Now</button>
+            </div>
+          </div>
+        
+      </section>
+
+      <!-- Banner Section End -->
+    </header>
+  </body>
+</html>
