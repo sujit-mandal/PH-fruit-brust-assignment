@@ -45,6 +45,9 @@
             backgroundImage: {
               "hero-pattern": "url(./images/team.png)",
             },
+            boxShadow: {
+              "card-shadow": "0px 8px 60px 0px rgba(0, 0, 0, 0.5)",
+            },
           },
         },
       };
@@ -59,11 +62,11 @@
   <div class="modal" id="my_modal_1">
     <div class="modal-box">
       <div
-        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-10"
+        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-5 lg:p-10"
       >
         <a href="#">
           <img
-            class="p-8 w-[100%]"
+            class="p-1 lg:p-8 w-[100%]"
             src="./images/fruit6.png"
             alt="product image"
           />
@@ -77,8 +80,9 @@
           </h5>
         </a>
         <p class="text-secondary-font-color font-medium text-center">
-          Professional employees are there for you to pick the most amazing and
-          fresh fruits.
+          An apple is a round, edible fruit produced by an apple tree (Malus
+          domestica). Apple trees are cultivated worldwide and are the most
+          widely grown species in the genus Malus.
         </p>
 
         <div class="flex items-center space-x-1">
@@ -157,11 +161,11 @@
   <div class="modal" id="my_modal_2">
     <div class="modal-box">
       <div
-        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-10"
+        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-5 lg:p-10"
       >
         <a href="#">
           <img
-            class="p-8 w-[100%]"
+            class="p-1 lg:p-8 w-[100%]"
             src="./images/fruit7.png"
             alt="product image"
           />
@@ -171,12 +175,13 @@
           <h5
             class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
-            Apples
+            Oranges
           </h5>
         </a>
         <p class="text-secondary-font-color font-medium text-center">
-          Professional employees are there for you to pick the most amazing and
-          fresh fruits.
+          Oranges are a type of healthy, low calorie, highly nutritious citrus
+          fruit. As part of a healthful and varied diet, oranges contribute to
+          strong.
         </p>
         <div class="flex items-center space-x-1">
           <svg
@@ -254,11 +259,11 @@
   <div class="modal" id="my_modal_3">
     <div class="modal-box">
       <div
-        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-10"
+        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-5 lg:p-10"
       >
         <a href="#">
           <img
-            class="p-8 w-[100%]"
+            class="p-1 lg:p-8 w-[100%]"
             src="./images/fruit8.png"
             alt="product image"
           />
@@ -268,12 +273,12 @@
           <h5
             class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
-            Apples
+            Dragons
           </h5>
         </a>
         <p class="text-secondary-font-color font-medium text-center">
-          Professional employees are there for you to pick the most amazing and
-          fresh fruits.
+          Dragon fruit is a food that grows on a climbing cactus called
+          hylocereus, which you'll find in tropical regions around the world.
         </p>
         <div class="flex items-center space-x-1">
           <svg
@@ -351,11 +356,11 @@
   <div class="modal" id="my_modal_4">
     <div class="modal-box">
       <div
-        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-10"
+        class="bg-white rounded-lg flex flex-col items-center space-y-5 p-5 lg:p-10"
       >
         <a href="#">
           <img
-            class="p-8 w-[100%]"
+            class="p-1 lg:p-8 w-[100%]"
             src="./images/fruit9.png"
             alt="product image"
           />
@@ -365,12 +370,12 @@
           <h5
             class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
-            Apples
+            Bananas
           </h5>
         </a>
         <p class="text-secondary-font-color font-medium text-center">
-          Professional employees are there for you to pick the most amazing and
-          fresh fruits.
+          Bananas are a popular fruit that contain essential nutrients that help
+          keep a person healthy.
         </p>
         <div class="flex items-center space-x-1">
           <svg
@@ -571,7 +576,7 @@
       <!-- Navbar Section End -->
 
       <!-- Banner Section Start -->
-      <section class="max-w-screen-xl py-5 mx-auto md:my-5">
+      <section class="max-w-screen-xl py-5 mx-auto md:my-5 relative">
         <div class="carousel w-full rounded-lg">
           <div id="slide1" class="carousel-item relative w-full">
             <div
@@ -738,12 +743,37 @@
             </div>
           </div>
         </div>
+
+        <div
+          class="hidden lg:flex gap-20 px-8 py-4 bg-white shadow-[0px_8px_60px_0px] shadow-[rgba(0,0,0,0.5)] rounded-lg absolute translate-x-[9%] translate-y-[-50%]"
+        >
+          <div class="text-center">
+            <img src="./images/fruit1.png" alt="" />
+            <p class="mt-2">Grape Fruit</p>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit2.png" alt="" />
+            <p class="mt-2">Orange</p>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit3.png" alt="" />
+            <p class="mt-2">Mango</p>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit4.png" alt="" />
+            <p class="mt-2">Strawberry</p>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit5.png" alt="" />
+            <p class="mt-2">Pomegranate</p>
+          </div>
+        </div>
       </section>
       <!-- Banner Section End -->
     </header>
 
     <main>
-      <section class="max-w-screen-xl mx-auto py-5 md:my-5">
+      <section class="max-w-screen-xl mx-auto pt-24 pb-5 md:my-5">
         <!-- Deal Section Start -->
         <div
           class="flex flex-col text-center justify-between items-center mb-10 lg:flex-row lg:text-left"
@@ -1539,8 +1569,8 @@
         </p>
         <div class="flex flex-col lg:flex-row gap-4">
           <div class="space-y-12 order-2 lg:order-1">
-            <div class="flex items-center">
-              <div class="relative mr-5">
+            <div class="flex flex-col justify-center items-center lg:flex-row">
+              <div class="relative mr-5 mt-4 mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -1570,13 +1600,12 @@
                   />
                 </svg>
               </div>
-
-              <div>
+              <div class="text-center lg:text-left">
                 <h5 class="text-primary-font-color font-extrabold text-2xl">
                   Dedicated Team
                 </h5>
                 <hr
-                  class="m-2 w-1/3 border-solid border-[1px] border-hr-color"
+                  class="m-2 mx-auto w-1/3 border-solid border-[1px] border-hr-color lg:mx-0"
                 />
                 <p>
                   Professional employees are there for you to pick the most
@@ -1584,8 +1613,8 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-center">
-              <div class="relative mr-5">
+            <div class="flex flex-col justify-center items-center lg:flex-row">
+              <div class="relative mr-5 mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -1616,12 +1645,12 @@
                 </svg>
               </div>
 
-              <div>
+              <div class="text-center lg:text-left">
                 <h5 class="text-primary-font-color font-extrabold text-2xl">
                   Fresh is Best
                 </h5>
                 <hr
-                  class="m-2 w-1/3 border-solid border-[1px] border-hr-color"
+                  class="m-2 mx-auto w-1/3 border-solid border-[1px] border-hr-color lg:mx-0"
                 />
                 <p>
                   Professional employees are there for you to pick the most
@@ -1629,8 +1658,8 @@
                 </p>
               </div>
             </div>
-            <div class="flex items-center">
-              <div class="relative mr-5">
+            <div class="flex flex-col justify-center items-center lg:flex-row">
+              <div class="relative mr-5 mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -1711,12 +1740,12 @@
                   </defs>
                 </svg>
               </div>
-              <div class="">
+              <div class="text-center lg:text-left">
                 <h5 class="text-primary-font-color font-extrabold text-2xl">
                   Gift Certificates
                 </h5>
                 <hr
-                  class="m-2 w-1/3 border-solid border-[1px] border-hr-color"
+                  class="m-2 mx-auto w-1/3 border-solid border-[1px] border-hr-color lg:mx-0"
                 />
                 <p class="pb-6 lg:pb-0">
                   Professional employees are there for you to pick the most
@@ -1731,20 +1760,24 @@
             class="order-1 lg:order-2"
           />
           <div class="space-y-12 order-2 lg:order-3">
-            <div class="flex items-center">
-              <div class="flex flex-col items-start lg:items-end order-2">
+            <div class="flex flex-col justify-center items-center lg:flex-row">
+              <div
+                class="flex flex-col justify-center items-center lg:items-end order-2"
+              >
                 <h5 class="text-primary-font-color font-extrabold text-2xl">
                   Integrated Supplier
                 </h5>
                 <hr
                   class="m-2 w-1/3 border-solid border-[1px] border-hr-color"
                 />
-                <p class="text-left lg:text-right">
+                <p class="text-center lg:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
-              <div class="relative mr-5 lg:ml-5 order-1">
+              <div
+                class="relative mr-5 mb-4 lg:ml-5 order-1 lg:order-2 lg:mr-0"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -1818,20 +1851,24 @@
                 </svg>
               </div>
             </div>
-            <div class="flex items-center">
-              <div class="flex flex-col items-start lg:items-end order-2">
+            <div class="flex flex-col justify-center items-center lg:flex-row">
+              <div
+                class="flex flex-col justify-center items-center lg:items-end order-2"
+              >
                 <h5 class="text-primary-font-color font-extrabold text-2xl">
                   Sustainable Practice
                 </h5>
                 <hr
                   class="m-2 w-1/3 border-solid border-[1px] border-hr-color"
                 />
-                <p class="text-left lg:text-right">
+                <p class="text-center lg:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
-              <div class="relative mr-5 lg:ml-5 order-1">
+              <div
+                class="relative mr-5 mb-4 lg:ml-5 order-1 lg:order-2 lg:mr-0"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -1866,20 +1903,24 @@
                 </svg>
               </div>
             </div>
-            <div class="flex items-center">
-              <div class="flex flex-col items-start lg:items-end order-2">
+            <div class="flex flex-col justify-center items-center lg:flex-row">
+              <div
+                class="flex flex-col justify-center items-center lg:items-end order-2"
+              >
                 <h5 class="text-primary-font-color font-extrabold text-2xl">
                   The Benefits Only
                 </h5>
                 <hr
                   class="m-2 w-1/3 border-solid border-[1px] border-hr-color"
                 />
-                <p class="text-left lg:text-right">
+                <p class="text-center lg:text-right mb-4">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
-              <div class="relative mr-5 lg:ml-5 order-1">
+              <div
+                class="relative mr-5 mb-4 lg:ml-5 order-1 lg:order-2 lg:mr-0"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -1935,7 +1976,7 @@
       </section>
       <!-- Why Choose Us Section Start-->
     </main>
-    <footer class="footer footer-center p-5 lg:p-28 bg-primary-font-color">
+    <footer class="footer footer-center p-10 lg:p-28 bg-primary-font-color">
       <div>
         <a href="#" class="flex items-center md:pl-40 lg:pl-0">
           <img src="./images/logo.png" class="h-15 mr-4" alt="Flowbite Logo" />
